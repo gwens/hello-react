@@ -5,7 +5,6 @@ console.log('hello webpack');
 
 // Use some imported CSS
 let nonReactStuff = document.getElementById('somestuff');
-nonReactStuff.classList.add('hello');
 
 // Use an imported image
 let myGoose = new Image();
@@ -19,6 +18,8 @@ import ReactDOM from 'react-dom';
 //require("babel-core").transform("code", options);
 
 ReactDOM.render(
-  <h1>Hello, React!</h1>,
+  <div className="hello">
+    <h1>Hello, React!</h1>
+  </div>,
   document.getElementById('root')
 );

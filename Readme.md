@@ -1,7 +1,13 @@
-# Install
+# Hello, React
+
+## Install
 
 `npm install`
 
-# Run development build with Webpack
+## Serve development build with Webpack Dev Server
 
 `npm run dev`
+
+## Production build with Webpack
+
+`npm run build`

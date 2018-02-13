@@ -3,7 +3,11 @@ const common = require('./webpack.common.js');
 
 module.exports = merge(common, {
   devtool: 'inline-source-map',
+  output: {
+    publicPath: "/",
+    filename: 'bundle.js'
+  },
   devServer: {
-    contentBase: './dist'
+     contentBase: './src'   
   }
 });

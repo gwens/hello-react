@@ -1,10 +1,14 @@
-var express = require('express');
-var app = express();
+const path = require('path');
+const express = require('express');
 
-app.get('/', function(req, res) {
-  res.send('Hello World');
+const DIST_DIR = path.join(__dirname, "../dist"),
+    PORT = 3001,
+    app = express();
+
+app.use(express.static(DIST_DIR));
+
+app.get('*', function(req, res) {
+  res.sendFile(path.join(DIST_DIR, 'index.html'));
 });
 
-app.listen(3001, function() {
-  console.log('Listening on port 3001');
-});
+app.listen(PORT);

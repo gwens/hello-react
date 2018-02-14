@@ -8,6 +8,10 @@
 
 `npm run dev`
 
-## Production build with Webpack
+## Create production build with Webpack
 
 `npm run build`
+
+## Serve production build locally with Express
+
+`npm run serve`

@@ -6,7 +6,7 @@
   "scripts": {
     "copy": "cp -r src/index.html dist",
     "dev": "webpack-dev-server --port 3000 --config webpack.dev.js",
-    "build": "npm run copy && webpack --config webpack.prod.js",
+    "build": "webpack --config webpack.prod.js && npm run copy",
     "serve": "node server/server.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
